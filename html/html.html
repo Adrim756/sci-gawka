@@ -9,7 +9,7 @@
 <body>
     <header><h1>SCIĄGAWKA HTML</h1></header>
     <main>
-        <article><p><b>&lt!DOCTYPE&&nbsp;html&gt&nbsp;</b>&nbsp;-&nbsp;Informuje przeglądarkę, że to dokument HTML5 </p></article>
+        <article><p><b>&lt!DOCTYPE&nbsp;html&gt&nbsp;</b>&nbsp;-&nbsp;Informuje przeglądarkę, że to dokument HTML5 </p></article>
         <article><p><b>&lt;html&nbsp;lang=&quot;język przykładowo (pl,en)&quot;&gt;&nbsp;</b>&nbsp;-&nbsp;Główny element strony (wszystko jest w środku) Informuje rownież o języku przeglądarki</p></article>
         <article><p><b>&lt;head&gt;&nbsp;</b>&nbsp;-&nbsp;Sekcja ustawień strony (tytuł, meta, style)</p></article>
         <article><p><b>&lt;title&gt;&nbsp;</b>&nbsp;-&nbsp;Tytuł strony (widoczny na karcie w przeglądarce)</p></article>
@@ -35,21 +35,64 @@
         <article><p><b>&lt;input&nbsp;type=&quot;text&quot;&gt;</b>&nbsp;-&nbsp;Pole tekstowe, można wpisać krótką treść.</p></article>
         <article><p><b>&lt;input&nbsp;type=&quot;password&quot;&gt;</b>&nbsp;-&nbsp;Ukrywa wpisywane znaki (kropki/gwiazdki).</p></article>
         <article><p><b>&lt;input&nbsp;type=&quot;email&quot;&gt;</b>&nbsp;-&nbsp;Sprawdza, czy wpisany tekst wygląda jak email.</p></article>
-        <article><p><b>&lt;input&nbsp;type=&quot;button&quot;&gt;</b>&nbsp;-&nbsp;guzik</p></article>
         <article><p><b>&lt;input&nbsp;type=&quot;number&quot;&gt;</b>&nbsp;-&nbsp;Tylko liczby w określonym zakresie.</p></article>
         <article><p><b>&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;name=&quot;nazwa&quot;&nbsp;value=&quot;wartość&quot;&gt;</b>&nbsp;-&nbsp;Można zaznaczyć lub odznaczyć.</p></article>
-        <article><p><b>&lt;input&nbsp;type=&quot;radio&quot;&gt;</b>-&nbsp;Można wybrać tylko jedną opcję w grupie.</p></article>
+        <article><p><b>&lt;textarea&nbsp;name=&quot;wiadomosc&quot;&nbsp;placeholder=&quot;Twoja wiadomość&quot;&gt;</b>&nbsp;-&nbsp;Duże pole tekstowe na kilka linijek.</p></article>
+        <article><p><b>&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;name&quot;&gt;</b>&nbsp;-&nbsp;Można wybrać tylko jedną opcję w grupie. (ten sam podpis w name).</p></article>
         <article>
                 <h2>Rozwijana lista z opcjami.</h2>
-                <p><b>&lt;select&nbsp;name=&quot;miasto&quot;&gt;</p>
-                <p><b>&lt;option&nbsp;value=&quot;warszawa&quot;&gt;</p>
+                <p><b>&lt;select&nbsp;name=&quot;miasto&quot;&gt;</b></p>
+                <p><b>&lt;option&nbsp;value=&quot;warszawa&quot;&gt;</b></p>
                 <p><b>&lt;/select&gt;</b></p>
                 
         </article>
-        <article><p><b>&lt;textarea&nbsp;name=&quot;wiadomosc&quot;&nbsp;placeholder=&quot;Twoja wiadomość&quot;&gt;</b>-&nbsp;Duże pole tekstowe na kilka linijek.</p></article>
-        <article><p><b>&lt;input&nbsp;type=&quot;button&quot;&gt;</b>-&nbsp;guzik</p></article>
-        <article><p><b>&lt;input&nbsp;type=&quot;button&quot;&gt;</b>-&nbsp;guzik</p></article>
-        <article><p><b>&lt;input&nbsp;type=&quot;button&quot;&gt;</b>-&nbsp;guzik</p></article>
+        <article>
+            <h2>LISTY.</h2>
+            <h3>Lista numerowana (ordered list)</h3>
+            <p><b>&lt;ol&nbsp;&gt;</b></p>
+            <p><b>&lt;li&gt;&nbsp;tekst&nbsp;&lt;/li&gt;</b></p>
+            <p><b>&lt;/ol&gt;</b></p>
+            <ol>
+            <li>Pierwszy punkt</li>
+            <li>Drugi punkt</li>
+            <li>Trzeci punkt</li>
+        </ol>
+        </article>
+        
+        <article>
+            <h3>Lista punktowana (unordered list)</h3>
+            <p><b>&lt;ul&nbsp;&gt;</b></p>
+            <p><b>&lt;li&gt;&nbsp;tekst&nbsp;&lt;/li&gt;</b></p>
+            <p><b>&lt;/ul&gt;</b></p>
+                    <ul>
+                    <li>Pierwszy punkt</li>
+                    <li>Drugi punkt</li>
+                    <li>Trzeci punkt</li>
+                    </ul>
+        </article>
+        
+        <article><h2>Inne przydatne znaczniki tekstu</h2></article>
+        <article><p><b>&lt;b&gt;&nbsp;tekst&nbsp;&lt;/b&gt;</b>&nbsp;-&nbsp;pogrubienie</p></article>
+        <article><p><b>&lt;strong&gt;<strong>&nbsp;tekst&nbsp;</strong>&lt;/strong&gt;</b>&nbsp;-&nbsp;semantycznie ważne</p></article>
+        <article><p><b>&lt;i&gt;&nbsp;<i>tekst</i>&nbsp;&lt;/i&gt;</b>&nbsp;-&nbsp;tekst pochylony</p></article>
+        <article><p><b>&lt;em&gt;&nbsp;<em>tekst</em>&nbsp;&lt;/em&gt;</b>&nbsp;-&nbsp;semantycznie podkreślone - emfaza</p></article>
+        <article><p><b>&lt;u&gt;&nbsp;<u>tekst</u>&nbsp;&lt;/u&gt;</b>&nbsp;-&nbsp;tekst podkreślony</p></article>
+        <article><p><b>&lt;mark&gt;&nbsp;<mark>tekst</mark>&nbsp;&lt;/mark&gt;</b>&nbsp;-&nbsp;zaznaczenie</p></article>
+        <article><p><b>&lt;small&gt;&nbsp;<small>tekst</small>&nbsp;&lt;/small&gt;</b>&nbsp;-&nbsp;mały tekst</p></article>
+        <h2>Najważniejsze atrybuty HTML</h2>
+        <article><p><b>&lt;div&nbsp;class=&quot;class name&quot;&gt;</b>&nbsp;-&nbsp;Nadaje klasę (do stylowania w CSS lub użycia w JS) Można używać wiele razy na stronie</p></article>
+        <article><p><b>&lt;div&nbsp;id=&quot;id name&quot;&gt;</b>&nbsp;-&nbsp;Unikalny identyfikator (tylko jeden taki na stronie) Używany do CSS, JS lub linków (#header)</p></article>
+        <article><p><b>&lt;p&nbsp;style=&quot;styl danego elementu (tutaj akurat paragraf)&quot;&gt;</b>&nbsp;-&nbsp;Styl bezpośrednio w HTML (CSS inline)</p></article>
+        <article><p><b>&lt;p&nbsp;title=&quot;tekst wyświetlany po najechaniu&quot;&gt;</b>&nbsp;-&nbsp;Pokazuje podpowiedź po najechaniu</p></article>
+        <article><p><b>&lt;p&nbsp;hidden&gt;</b>&nbsp;-&nbsp;Ukrywa element</p></article>
+        <article><p><b>&lt;a&nbsp;href&quot;link=&quot;&gt;</b>&nbsp;-&nbsp;Adres strony</p></article>
+        <article><p><b>&lt;a&nbsp;href&quot;link=&quot;&nbsp;target=&quot;_blank&quot;&gt;</b>&nbsp;-&nbsp;Adres strony</p></article>
+        <article><p><b>&lt;img&nbsp;src=&quot;obraz.png&quot;&gt;</b>&nbsp;-&nbsp;Ścieżka do obrazka</p></article>
+        <article><p><b>&lt;img&nbsp;src=&quot;obraz.png&quot;&nbsp;alt=&quot;opis dla obrazu&quot;&gt;</b>&nbsp;-&nbsp;Opis (ważny dla dostępności i SEO)</p></article>
+        <article><p><b>&lt;div&nbsp;class="class name"&gt;</b>&nbsp;-&nbsp;Nadaje klasę (do stylowania w CSS lub użycia w JS) Można używać wiele razy na stronie</p></article>
+        <article><p><b>&lt;div&nbsp;class="class name"&gt;</b>&nbsp;-&nbsp;Nadaje klasę (do stylowania w CSS lub użycia w JS) Można używać wiele razy na stronie</p></article>
+        <article><p><b>&lt;div&nbsp;class="class name"&gt;</b>&nbsp;-&nbsp;Nadaje klasę (do stylowania w CSS lub użycia w JS) Można używać wiele razy na stronie</p></article>
+        <article><p><b>&lt;div&nbsp;class="class name"&gt;</b>&nbsp;-&nbsp;Nadaje klasę (do stylowania w CSS lub użycia w JS) Można używać wiele razy na stronie</p></article>
     </main>
 </body>
 </html>
