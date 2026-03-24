@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sciagawka html</title>
+    <title>HTML</title>
     <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="jeż.png" type="image/png">
 </head>
 <body>
     <header><h1>SCIĄGAWKA HTML</h1></header>
+    <nav>
+        <article>
+        <ol>
+           <li> <a href="#cotohtml">CO TO HTML PODSTAWOWE ELEMENTY</a> <br/> </li>
+           <li> <a href="#laczenieskryptu">ŁĄCZENIE SKRYPTU ORAZ STYLU W &lt;head&gt; ORAZ FAV ICON</a> <br/> </li>
+           <li> <a href="#rozwijanalista">ROZWIJANA LISTA Z OPCJAMI & LISTY</a> <br/> </li>
+           <li> <a href="#tablice">TABLICE</a> <br/> </li>
+           <li> <a href="#przydatneznaczniki">INNE PRZYDATNE ZNACZNIKI TEKSTU</a> <br/> </li>
+           <li> <a href="#atrybutyhtml">NAJWAZNIEJSZE ATRYBUTY HTML</a> <br/> </li>
+           <li> <a href="#formularz">FORMULARZ ORAZ ATRYBUTY DO FORMULARZY</a> <br/> </li>
+           <li> <a href="#encje">ENCJE HTML</a> <br/> </li>
+        </ol>
+        </article>
+    </nav>
     <main>
-        <article><p><b>&lt!DOCTYPE&nbsp;html&gt&nbsp;</b>&nbsp;-&nbsp;Informuje przeglądarkę, że to dokument HTML5 </p></article>
+        <article id="cotohtml"><b>co to HTML? - HTML to język znaczników służący do tworzenia struktury stron internetowych.</b></article>
+        <article><p><b>&lt;!-- --&gt;</b>&nbsp;-&nbsp;komentarz </p></article>
+        <article><p><b>&lt;!DOCTYPE&nbsp;html&gt;&nbsp;</b>&nbsp;-&nbsp;Informuje przeglądarkę, że to dokument HTML5 </p></article>
         <article><p><b>&lt;html&nbsp;lang=&quot;język przykładowo (pl,en)&quot;&gt;&nbsp;</b>&nbsp;-&nbsp;Główny element strony (wszystko jest w środku) Informuje rownież o języku przeglądarki</p></article>
         <article><p><b>&lt;head&gt;&nbsp;</b>&nbsp;-&nbsp;Sekcja ustawień strony (tytuł, meta, style)</p></article>
         <article><p><b>&lt;title&gt;&nbsp;</b>&nbsp;-&nbsp;Tytuł strony (widoczny na karcie w przeglądarce)</p></article>
@@ -25,11 +42,12 @@
         <article><p><b>&lt;main&gt;</b>&nbsp;-&nbsp;główna zawartość strony</p></article>
         <article><p><b>&lt;article&gt;</b>&nbsp;-&nbsp;samodzielny artykuł</p></article>
         <article><p><b>&lt;section&gt;</b>&nbsp;-&nbsp;sekcja tematyczna</p></article>
-        <article><p><b>&lt;asside&gt;</b>&nbsp;-&nbsp;treści dodatkowe</p></article>
+        <article><p><b>&lt;aside&gt;</b>&nbsp;-&nbsp;treści dodatkowe</p></article>
         <article><p><b>&lt;nav&gt;</b>&nbsp;-&nbsp;nawigacja</p></article>
         <article><p><b>&lt;footer&gt;</b>&nbsp;-&nbsp;stopka</p></article>
-        <article><p><b>&lt;button&gt;</b>&nbsp;-&nbsp;Guziki (buttons)</p></article>
-        <article><p><b>&lt;input&nbsp;type=&quot;button&quot;&gt;</b>&nbsp;-&nbsp;guzik</p></article>
+        <article><p><b>&lt;span&gt;</b>&nbsp;-&nbsp;to element inline, czyli „w linii” tekstu. Nie tworzy nowej linii ani bloku, służy do grupowania fragmentu tekstu lub elementów w celu stylowania CSS lub użycia w JavaScript.</p></article>
+        <article><p><b>&lt;button&gt;</b>&nbsp;-&nbsp;Guziki (buttons), bardziej uniwersalny</p></article>
+        <article><p><b>&lt;input&nbsp;type=&quot;button&quot;&gt;</b>&nbsp;-&nbsp;guzik, prosty przycisk</p></article>
         <article><p><b>&lt;input&nbsp;type=&quot;submit&quot;&gt;</b>&nbsp;-&nbsp;Przycisk wysyłający formularz.</p></article>
         <article><p><b>&lt;input&nbsp;type=&quot;reset&quot;&gt;</b>&nbsp;-&nbsp;Przycisk do wyczyszczenia formularza.</p></article>
         <article><p><b>&lt;input&nbsp;type=&quot;text&quot;&gt;</b>&nbsp;-&nbsp;Pole tekstowe, można wpisać krótką treść.</p></article>
@@ -39,16 +57,26 @@
         <article><p><b>&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;name=&quot;nazwa&quot;&nbsp;value=&quot;wartość&quot;&gt;</b>&nbsp;-&nbsp;Można zaznaczyć lub odznaczyć.</p></article>
         <article><p><b>&lt;textarea&nbsp;name=&quot;wiadomosc&quot;&nbsp;placeholder=&quot;Twoja wiadomość&quot;&gt;</b>&nbsp;-&nbsp;Duże pole tekstowe na kilka linijek.</p></article>
         <article><p><b>&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;name&quot;&gt;</b>&nbsp;-&nbsp;Można wybrać tylko jedną opcję w grupie. (ten sam podpis w name).</p></article>
-        <article>
+        <article><p><b>&lt;meta&nbsp;name=&quot;description&quot;&nbsp;content=&quot;strona z sciagawka&quot;&gt;</b>&nbsp;-&nbsp;o meta tag w <head>, który opisuje stronę dla wyszukiwarek i SEO. Nie jest widoczny na stronie, ale pomaga Google i innym robotom indeksować stronę.</p></article> 
+       <article id="laczenieskryptu">
+                <h2>ŁĄCZENIE SKRYPTU ORAZ STYLU W &lt;head&gt;</h2>
+            <p><b>&lt;link rel="stylesheet" href="styl.css"&gt;</b> - ładowanie pliku CSS ze stylem</p>
+            <p><b>&lt;style&gt; ... &lt;/style&gt;</b> - bezpośrednie pisanie stylów CSS w dokumencie HTML</p>
+            <p><b>&lt;script src="skrypt.js"&gt;&lt;/script&gt;</b> - dołączenie pliku JavaScript</p>
+            <p><b>&lt;script&gt; ... &lt;/script&gt;</b> - bezpośrednie pisanie JavaScript w dokumencie HTML</p>
+                <h3>FAV ICON</h3>
+            <p><b>&lt;link rel="icon" href="favicon.ico" type="image/x-icon (zamiast tego moze byc png badz jpg)"&gt;</b> - dodanie ikony strony (favicon)</p>
+        </article>
+        <article id="rozwijanalista">
                 <h2>Rozwijana lista z opcjami.</h2>
                 <p><b>&lt;select&nbsp;name=&quot;miasto&quot;&gt;</b></p>
-                <p><b>&lt;option&nbsp;value=&quot;warszawa&quot;&gt;</b></p>
+                <p><b>&lt;option&nbsp;value=&quot;warszawa&quot;&gt;&nbsp;warszawa&nbsp;&lt;/option&gt</b></p>
                 <p><b>&lt;/select&gt;</b></p>
                 
         </article>
-        <article>
+       <article>
             <h2>LISTY.</h2>
-            <h3>Lista numerowana (ordered list)</h3>
+            <h3>lista uporządkowana = numerowana (ordered list)</h3>
             <p><b>&lt;ol&nbsp;&gt;</b></p>
             <p><b>&lt;li&gt;&nbsp;tekst&nbsp;&lt;/li&gt;</b></p>
             <p><b>&lt;/ol&gt;</b></p>
@@ -60,8 +88,8 @@
         </article>
         
         <article>
-            <h3>Lista punktowana (unordered list)</h3>
-            <p><b>&lt;ul&nbsp;&gt;</b></p>
+            <h3>nieuporządkowana = punktowana (unordered list)</h3>
+            <p><b>&lt;ul&gt;</b></p>
             <p><b>&lt;li&gt;&nbsp;tekst&nbsp;&lt;/li&gt;</b></p>
             <p><b>&lt;/ul&gt;</b></p>
                     <ul>
@@ -70,8 +98,66 @@
                     <li>Trzeci punkt</li>
                     </ul>
         </article>
+        <article id="tablice"><h2>TABLICE</h2>
+        <p><b>&lt;table&gt;&nbsp;border=&nbsp;&quot;grubość 1&gt;&quot;&lt;/table&gt;</b>&nbsp;-&nbsp;</p>
+        <p><b>&lt;tr&gt;&nbsp;&lt;/tr&gt;</b>&nbsp;-&nbsp;(table row) – wiersz</p>
+        <p><b>&lt;td&gt;&nbsp;&lt;/td&gt;</b>&nbsp;-&nbsp;(table data) – komórka</p>
+        <p><b>&lt;th&gt;&nbsp;&lt;/th&gt;</b>&nbsp;-&nbsp;(table header) – nagłówek</p>
         
-        <article><h2>Inne przydatne znaczniki tekstu</h2></article>
+        <textarea style="width:200px; height:200px;">
+<table border="1">
+    <tr>
+        <th>Imię</th>
+        <th>Wiek</th>
+    </tr>
+    <tr>
+        <td>Jan</td>
+        <td>20</td>
+    </tr>
+    
+</table>
+</textarea>
+    <table border="1">
+        <tr>
+            <th>Imię</th>
+            <th>Wiek</th>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>ATRYBUTY</h3>
+    
+    <ul>
+      <li> colspan – łączenie kolumn </li>
+      <li> rowspan – łączenie wierszy</li>
+    </ul>
+    
+    <h3>DODATKOWE ELEMENTY</h3> 
+    <ul>
+      <li> &lt;thead&gt; – nagłówek tabeli </li>
+      <li> &lt;tbody&gt; – zawartość </li>
+      <li> &lt;tfoot&gt; – stopka</li>
+    </ul>
+
+     <textarea style="width:200px; height:200px;">
+<table border="1">
+    <table>
+        <thead>
+            <tr><th>Produkt</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Chleb</td></tr>
+        </tbody>
+    </table>
+</textarea>
+
+        
+        </article>
+        
+        <article id="przydatneznaczniki"><h2>Inne przydatne znaczniki tekstu</h2></article>
         <article><p><b>&lt;b&gt;&nbsp;tekst&nbsp;&lt;/b&gt;</b>&nbsp;-&nbsp;pogrubienie</p></article>
         <article><p><b>&lt;strong&gt;<strong>&nbsp;tekst&nbsp;</strong>&lt;/strong&gt;</b>&nbsp;-&nbsp;semantycznie ważne</p></article>
         <article><p><b>&lt;i&gt;&nbsp;<i>tekst</i>&nbsp;&lt;/i&gt;</b>&nbsp;-&nbsp;tekst pochylony</p></article>
@@ -79,20 +165,71 @@
         <article><p><b>&lt;u&gt;&nbsp;<u>tekst</u>&nbsp;&lt;/u&gt;</b>&nbsp;-&nbsp;tekst podkreślony</p></article>
         <article><p><b>&lt;mark&gt;&nbsp;<mark>tekst</mark>&nbsp;&lt;/mark&gt;</b>&nbsp;-&nbsp;zaznaczenie</p></article>
         <article><p><b>&lt;small&gt;&nbsp;<small>tekst</small>&nbsp;&lt;/small&gt;</b>&nbsp;-&nbsp;mały tekst</p></article>
-        <h2>Najważniejsze atrybuty HTML</h2>
+
+        <article id="atrybutyhtml"><h2>Najważniejsze atrybuty HTML</h2></article>
         <article><p><b>&lt;div&nbsp;class=&quot;class name&quot;&gt;</b>&nbsp;-&nbsp;Nadaje klasę (do stylowania w CSS lub użycia w JS) Można używać wiele razy na stronie</p></article>
         <article><p><b>&lt;div&nbsp;id=&quot;id name&quot;&gt;</b>&nbsp;-&nbsp;Unikalny identyfikator (tylko jeden taki na stronie) Używany do CSS, JS lub linków (#header)</p></article>
         <article><p><b>&lt;p&nbsp;style=&quot;styl danego elementu (tutaj akurat paragraf)&quot;&gt;</b>&nbsp;-&nbsp;Styl bezpośrednio w HTML (CSS inline)</p></article>
         <article><p><b>&lt;p&nbsp;title=&quot;tekst wyświetlany po najechaniu&quot;&gt;</b>&nbsp;-&nbsp;Pokazuje podpowiedź po najechaniu</p></article>
         <article><p><b>&lt;p&nbsp;hidden&gt;</b>&nbsp;-&nbsp;Ukrywa element</p></article>
-        <article><p><b>&lt;a&nbsp;href&quot;link=&quot;&gt;</b>&nbsp;-&nbsp;Adres strony</p></article>
-        <article><p><b>&lt;a&nbsp;href&quot;link=&quot;&nbsp;target=&quot;_blank&quot;&gt;</b>&nbsp;-&nbsp;Adres strony</p></article>
+        <article><p><b>&lt;a&nbsp;href=&quot;link&quot;&gt;</b>&nbsp;-&nbsp;Adres strony</p></article>
+        <article><p><b>&lt;a&nbsp;href=&quot;link&quot;&nbsp;target=&quot;_blank&quot;&gt;</b>&nbsp;-&nbsp;target=&quot;_blank&quot; otwiera link w innej karcie</p></article>
         <article><p><b>&lt;img&nbsp;src=&quot;obraz.png&quot;&gt;</b>&nbsp;-&nbsp;Ścieżka do obrazka</p></article>
         <article><p><b>&lt;img&nbsp;src=&quot;obraz.png&quot;&nbsp;alt=&quot;opis dla obrazu&quot;&gt;</b>&nbsp;-&nbsp;Opis (ważny dla dostępności i SEO)</p></article>
-        <article><p><b>&lt;div&nbsp;class="class name"&gt;</b>&nbsp;-&nbsp;Nadaje klasę (do stylowania w CSS lub użycia w JS) Można używać wiele razy na stronie</p></article>
-        <article><p><b>&lt;div&nbsp;class="class name"&gt;</b>&nbsp;-&nbsp;Nadaje klasę (do stylowania w CSS lub użycia w JS) Można używać wiele razy na stronie</p></article>
-        <article><p><b>&lt;div&nbsp;class="class name"&gt;</b>&nbsp;-&nbsp;Nadaje klasę (do stylowania w CSS lub użycia w JS) Można używać wiele razy na stronie</p></article>
-        <article><p><b>&lt;div&nbsp;class="class name"&gt;</b>&nbsp;-&nbsp;Nadaje klasę (do stylowania w CSS lub użycia w JS) Można używać wiele razy na stronie</p></article>
+        <article><p><b>&lt;input&nbsp;type=&quot;????&quot;&gt;</b>&nbsp;-&nbsp;type typ pola</p>
+      <ul>
+      <li> text </li>
+      <li> password</li>
+      <li> email</li>
+      <li> number </li>
+      <li> checkbox </li>
+      <li> radio </li>
+      <li> submit </li>
+      </ul>  
+      </article>
+        <article><p><b>&lt;input&nbsp;type="??"&nbsp;name=&quot;login&quot;&nbsp;placeholder=&quot;Login&nbsp;&quot;required&gt;</b></p>
+        <ul>
+        <li> name – nazwa pola </li>
+        <li> value – wartość pola</li>
+        <li> placeholder – podpowiedź</li>
+        <li> required – pole wymagane </li>
+        </ul>  
+        </article>
+        <article><p><b>&lt;html&nbsp;lang=&quot;pl&quot;&gt;</b>&nbsp;-&nbsp;lang język strony</p></article>
+        <article><p><b>&lt;meta&nbsp;charset=&quot;UTF-8&quot;&gt;</b>&nbsp;-&nbsp;charset kodowanie znaków</p></article>   
+        
+        <article><h2 id="formularz">FORMULARZ ORAZ ATRYBUTY</h2>
+        <article><p><b>&lt;form&nbsp;action=&quot;/send&quot;&nbsp;method=&quot;post/get&quot;&gt;</b>
+        <p>action – gdzie wysłać dane</p>
+        <p>method – sposób wysyłania (GET – pobieranie danych (dane w URL), POST – wysyłanie danych (dane w body (bezpieczniejsze))</p>
+        <article><p><b>&lt;label&gt;</b>&nbsp;-&nbsp;łączy opis z polem formularza</p></article>
+        <article><p><b>&lt;for&gt;</b>&nbsp;-&nbsp;łączy z id</p></article>
+        <textarea style="width:500px; height:100px;">
+
+<form action="/send" method="POST">
+  <label for="login">Login:</label>
+  <input type="text" id="login" name="login" required>
+  <input type="submit" value="Wyślij">
+</form>
+
+</textarea>
+        </article>
+         </article>
+        <article>
+            <h2 id="encje">ENCJE HTML</h2>
+            <ul>
+                <li> &amp;lt; = &lt;</li>
+                <li> &amp;gt; = &gt;</li>
+                <li> &amp;amp; = &amp;</li>
+                <li> &amp;nbsp; = spacja twarda</li>
+            </ul>  
+        </article>
+       
     </main>
+    <script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+</script>
 </body>
 </html>
