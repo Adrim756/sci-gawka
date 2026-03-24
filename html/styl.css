@@ -20,7 +20,7 @@ header {
     font-size: 110%;
 }
 body {
-    background-color: #444444;
+    background-color: #000000;
     font-family: "Times New Roman", serif;
     color: #ffffff;
     margin: 0;
@@ -59,4 +59,22 @@ a {
 a:hover {
     background-color: #1c1c1c;
     box-shadow: 0px 0px 5px black;
+}
+header {
+    text-align: center; /* np. h1 może być wycentrowany */
+}
+
+/* Lista w nagłówku wyrównana do lewej */
+header article#naglowek ol {
+    width: 100%;       /* cała szerokość nagłówka */
+    margin: 0 auto;
+    padding-left: 20px; 
+    text-align: left;  /* tekst i linki do lewej */
+}
+
+/* Linki w li nagłówka */
+header article#naglowek ol li a {
+    display: block;    /* każdy link jako blok */
+    text-align: left;  /* wymuszenie lewej strony */
+    
 }
