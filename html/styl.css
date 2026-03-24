@@ -11,6 +11,14 @@ ol {
   width: 500px; /* lub auto */
   margin: 0 auto; /* automatyczne marginesy po bokach */
 }
+header {
+    background-color: #444444;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    line-height: 1.5;
+    font-size: 300%;
+}
 body {
     background-color: #1c1c1c;
     font-family: "Times New Roman", serif;
