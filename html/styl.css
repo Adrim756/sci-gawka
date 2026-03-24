@@ -58,7 +58,7 @@ a {
 }
 a:hover {
     background-color: #1c1c1c;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 10px black;
 }
 header {
     text-align: center; /* np. h1 może być wycentrowany */
@@ -79,7 +79,7 @@ header article#naglowek ol {
 header article#naglowek ol li {
     margin: 0;        /* usuwa marginesy li */
     padding: 0;       /* usuwa padding li */
-    line-height: 1;   /* minimalna wysokość wiersza, ciasno pod sobą */
+    line-height: 0.8;   /* minimalna wysokość wiersza, ciasno pod sobą */
 }
 
 /* Linki w li */
