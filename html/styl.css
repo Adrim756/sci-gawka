@@ -4,7 +4,7 @@
     
 }
 ul {
-  width: 300px; /* lub auto */
+  width: 500px; /* lub auto */
   margin: 0 auto; /* automatyczne marginesy po bokach */
 }
 ol {
@@ -67,14 +67,25 @@ header {
 /* Lista w nagłówku wyrównana do lewej */
 header article#naglowek ol {
     width: 100%;       /* cała szerokość nagłówka */
-    margin: 0 auto;
+    margin: 0px;
     padding-left: 20px; 
     text-align: left;  /* tekst i linki do lewej */
+    
+    
 }
 
 /* Linki w li nagłówka */
+/* Elementy listy w nagłówku */
+header article#naglowek ol li {
+    margin: 0;        /* usuwa marginesy li */
+    padding: 0;       /* usuwa padding li */
+    line-height: 1;   /* minimalna wysokość wiersza, ciasno pod sobą */
+}
+
+/* Linki w li */
 header article#naglowek ol li a {
     display: block;    /* każdy link jako blok */
-    text-align: left;  /* wymuszenie lewej strony */
-    
+    text-align: left;  /* tekst linku do lewej */
+    margin: 0;
+    padding: 0;
 }
