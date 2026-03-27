@@ -56,8 +56,8 @@
         <p><b>&lt;input&nbsp;type=&quot;password&quot;&gt;</b>&nbsp;-&nbsp;Ukrywa wpisywane znaki (kropki/gwiazdki).</p>
         <p><b>&lt;input&nbsp;type=&quot;email&quot;&gt;</b>&nbsp;-&nbsp;Sprawdza, czy wpisany tekst wygląda jak email.</p>
         <p><b>&lt;input&nbsp;type=&quot;number&quot;&gt;</b>&nbsp;-&nbsp;Tylko liczby w określonym zakresie.</p>
-        <p><b>&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;name=&quot;nazwa&quot;&nbsp;value=&quot;wartość&quot;&gt;</b>&nbsp;-&nbsp;Można zaznaczyć lub odznaczyć.</p>
-        <p><b>&lt;textarea&nbsp;name=&quot;wiadomosc&quot;&nbsp;placeholder=&quot;Twoja wiadomość&quot;&gt;</b>&nbsp;-&nbsp;Duże pole tekstowe na kilka linijek.</p>
+        <p><b>&lt;input&nbsp;type=&quot;checkbox&quot;&nbsp;name=&quot;nazwa&quot; value=&quot;wartość&quot;&gt;</b>&nbsp;-&nbsp;Można zaznaczyć lub odznaczyć.</p>
+        <p><b>&lt;textarea&nbsp;name=&quot;wiadomosc&quot; placeholder=&quot;Twoja wiadomość&quot;&gt;</b>&nbsp;-&nbsp;Duże pole tekstowe na kilka linijek.</p>
         <p><b>&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;name&quot;&gt;</b>&nbsp;-&nbsp;Można wybrać tylko jedną opcję w grupie. (ten sam podpis w name).</p>
         <p><b>&lt;meta&nbsp;name=&quot;description&quot;&nbsp;content=&quot;strona z sciagawka&quot;&gt;</b>&nbsp;-&nbsp;o meta tag w <head>, który opisuje stronę dla wyszukiwarek i SEO. Nie jest widoczny na stronie, ale pomaga Google i innym robotom indeksować stronę.</p>
         </article> 
@@ -78,7 +78,7 @@
         <article id="rozwijanalista">
                 <h2>Rozwijana lista z opcjami.</h2>
                 <p><b>&lt;select&nbsp;name=&quot;miasto&quot;&gt;</b></p>
-                <p><b>&lt;option&nbsp;value=&quot;warszawa&quot;&gt;&nbsp;warszawa&nbsp;&lt;/option&gt</b></p>
+                <p><b>&lt;option&nbsp;value=&quot;warszawa&quot;&gt;&nbsp;warszawa &lt;/option&gt;</b></p>
                 <p><b>&lt;/select&gt;</b></p>
                 
         </article>
@@ -199,7 +199,7 @@
       <li> submit </li>
       </ul>  
       
-        <p><b>&lt;input&nbsp;type="??"&nbsp;name=&quot;login&quot;&nbsp;placeholder=&quot;Login&nbsp;&quot;required&gt;</b></p>
+        <p><b>&lt;input&nbsp;type="??"&nbsp;name=&quot;login&quot; placeholder=&quot;Login&nbsp;&quot;required&gt;</b></p>
         <ul>
         <li> name – nazwa pola </li>
         <li> value – wartość pola</li>
@@ -213,12 +213,12 @@
         
 
         <article><h2 id="formularz">FORMULARZ ORAZ ATRYBUTY</h2>
-        <p><b>&lt;form&nbsp;action=&quot;/send&quot;&nbsp;method=&quot;post/get&quot;&gt;</b>
+        <p><b>&lt;form&nbsp;action=&quot;/send&quot; method=&quot;post/get&quot;&gt;</b>
         <p>action – gdzie wysłać dane</p>
         <p>method – sposób wysyłania (GET – pobieranie danych (dane w URL), POST – wysyłanie danych (dane w body (bezpieczniejsze))</p>
         <p><b>&lt;label&gt;</b>&nbsp;-&nbsp;łączy opis z polem formularza</p>
         <p><b>&lt;for&gt;</b>&nbsp;-&nbsp;łączy z id</p>
-        <textarea style="width:500px; height:100px;">
+        <textarea style="width:80%; height:120px;">
 
 <form action="/send" method="POST">
   <label for="login">Login:</label>
