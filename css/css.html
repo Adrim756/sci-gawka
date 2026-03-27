@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="jeż.png" type="image/png">
+</head>
+<body>
+    <header><h1>SCIĄGAWKA CSS</h1>
+    
+        <article id="naglowek">
+        <ol>
+           <li> <a href="#css">CO TO CSS?</a> <br/> </li>
+           <li> <a href="#skladnia">SKŁADNIA</a> <br/> </li>
+           <li> <a href="#selektory">SELEKTORY</a> <br/> </li>
+           <li> <a href="#PSEUDO-KLASY">PSEUDO-KLASY</a> <br/> </li>
+           <li> <a href="#kolory">KOLORY</a> <br/> </li>
+           <li> <a href="#tekst">TEXT</a> <br/> </li>
+           <li> <a href="#boxmodel">BOX MODEL</a> <br/> </li>
+           <li> <a href="#display">DISPLAY</a> <br/> </li>
+           <li> <a href="#position">POSITION</a> <br/> </li>
+           <li> <a href="#flexbox">FLEXBOX</a> <br/> </li>
+           <li> <a href="#grid">GRID</a> <br/> </li>
+           <li> <a href="#media">MEDIA</a> <br/> </li>
+           <li> <a href="#z-index">Z-INDEX </a> <br/> </li>
+           <li> <a href="#overflow">OVERFLOW </a> <br/> </li>
+           <li> <a href="#opacity">OPACITY</a> <br/> </li>
+           <li> <a href="#cursor">CURSOR</a> <br/> </li>
+           <li> <a href="#transform">TRANSFORM</a> <br/> </li>
+           <li> <a href="#transition">TRANSITION</a> <br/> </li>
+           <li> <a href="#list">LISTY</a> <br/> </li>
+           <li> <a href="#linki">LINKI</a> <br/> </li>
+           <li> <a href="#jednostki">JEDNOSTKI</a> <br/> </li>
+        </ol>
+        </article>
+    </header>
+    
+    
+<article id="css">
+<p><b>co to CSS?</b> – CSS to język stylów służący do wyglądu strony (kolory, układ, czcionki)</p>
+</article>
+<article id="skladnia">
+<h3>SKŁADNIA</h3>
+<p><b>selektor { właściwość: wartość; }</b> – podstawowa budowa CSS</p>
+</article>
+<article id="selektory">
+<h3>SELEKTORY</h3>
+<p><b>p { }</b> – wszystkie paragrafy</p>
+<p><b>.klasa { }</b> – elementy z klasą</p>
+<p><b>#id { }</b> – element z id</p>
+<p><b>* { }</b> – wszystkie elementy</p>
+<p><b>div p { }</b> – wszystkie p w div</p>
+<p><b>div > p { }</b> – tylko bezpośrednie p w div</p>
+<p><b>h1 + p { }</b> – pierwszy p po h1</p>
+<p><b>h1 ~ p { }</b> – wszystkie p po h1</p>
+</article>
+<article id="PSEUDO-KLASY">
+<h3>PSEUDO-KLASY</h3>
+<p><b>:hover</b>   – najechanie</p>
+<p><b>:focus</b>   – kliknięcie inputa</p>
+<p><b>:active</b>  – kliknięty element</p>
+<p><b>:visited</b> – odwiedzony link</p>
+<p><b>:link</b>    – zwykły link</p>
+<p><b>:target</b>  – element z #id z URL</p>
+<p><b>:checked</b> – zaznaczony checkbox / radio</p>
+</article>
+<article id="kolory">
+<h3>KOLORY I TŁO</h3>
+<p><b>color: red;</b> – kolor tekstu</p>
+<p><b>background-color: blue;</b> – kolor tła</p>
+<p><b>background-image: url(img.jpg);</b> – obraz jako tło</p>
+<p><b>background-size: cover;</b> – dopasowanie tła</p>
+</article>
+<article id="tekst">
+<h3>TEKST</h3>
+<p><b>font-size: 16px;</b> – rozmiar tekstu</p>
+<p><b>font-family: Arial;</b> – czcionka</p>
+<p><b>font-weight: bold;</b> – pogrubienie</p>
+<p><b>text-align: center;</b> – wyrównanie</p>
+<p><b>text-decoration: underline;</b> – podkreślenie</p>
+</article>
+<article id="boxmodel">
+<h3>BOX MODEL</h3>
+<p><b>width: 100px;</b> – szerokość</p>
+<p><b>height: 100px;</b> – wysokość</p>
+<p><b>margin: 10px;</b> – margines zewnętrzny</p>
+<p><b>padding: 10px;</b> – odstęp wewnętrzny</p>
+<p><b>border: 1px solid black;</b> – obramowanie</p>
+<p><b>box-sizing: border-box;</b> – padding w środku rozmiaru</p>
+</article>
+<article id="display">
+<h3>DISPLAY</h3>
+<p><b>display: block;</b> – element blokowy</p>
+<p><b>display: inline;</b> – w linii</p>
+<p><b>display: inline-block;</b> – mieszany</p>
+<p><b>display: none;</b> – ukrywa element</p>
+</article>
+<article id="position">
+<h3>POSITION</h3>
+<p><b>position: static;</b> – domyślne</p>
+<p><b>position: relative;</b> – względem siebie</p>
+<p><b>position: absolute;</b> – względem rodzica</p>
+<p><b>position: fixed;</b> – względem okna</p>
+<p><b>top, left, right, bottom</b> – przesunięcia</p>
+</article>
+<article id="flexbox">
+<h3>FLEXBOX</h3>
+<p><b>display: flex;</b> – włącza flex</p>
+<p><b>flex-direction: row;</b> – wiersz</p>
+<p><b>flex-direction: column;</b> – kolumna</p>
+<p><b>justify-content: center;</b> – poziomo</p>
+<p><b>align-items: center;</b> – pionowo</p>
+<p><b>gap: 10px;</b> – odstępy</p>
+</article>
+<article id="grid">
+<h3>GRID</h3>
+<p><b>display: grid;</b> – włącza grid</p>
+<p><b>grid-template-columns: 1fr 1fr;</b> – kolumny</p>
+</article>
+<article id="media">
+<h3>MEDIA QUERIES</h3>
+<p><b>@media (max-width: 600px)</b> – styl na telefon</p>
+</article>
+<article id="z-index">
+<h3>Z-INDEX</h3>
+<p><b>z-index: 10;</b> – kolejność warstw</p>
+</article>
+<article id="overflow">
+<h3>OVERFLOW</h3>
+<p><b>overflow: hidden;</b> – ukrywa nadmiar</p>
+<p><b>overflow: scroll;</b> – dodaje scroll</p>
+</article>
+<article id="opacity">
+<h3>OPACITY</h3>
+<p><b>opacity: 0.5;</b> – przezroczystość</p>
+</article>
+<article id="cursor">
+<h3>CURSOR</h3>
+<p><b>cursor: pointer;</b> – zmienia kursor</p>
+</article>
+<article id="transform">
+<h3>TRANSFORM</h3>
+<p><b>transform: rotate(45deg);</b> – obrót</p>
+<p><b>transform: scale(1.2);</b> – powiększenie</p>
+</article>
+<article id="transition">
+<h3>TRANSITION</h3>
+<p><b>transition: 0.3s;</b> – płynna zmiana</p>
+</article>
+<article id="list">
+<h3>LISTY (menu)</h3>
+<p><b>list-style: none;</b> – usuwa kropki</p>
+<p><b>li { display: inline; }</b> – menu poziome</p>
+</article>
+<article id="linki">
+<h3>LINKI</h3>
+<p><b>a:link</b> – zwykły link</p>
+<p><b>a:visited</b> – odwiedzony</p>
+<p><b>a:hover</b> – po najechaniu</p>
+<p><b>a:active</b> – kliknięty</p>
+
+</article>
+<article id="jednostki">
+<h3>JEDNOSTKI</h3>
+<p><b>px</b> – piksele</p>
+<p><b>%</b> – procent</p>
+<p><b>vh / vw</b> – ekran</p>
+<p><b>em</b>   – względem rodzica (font-size)</p>
+<p><b>rem</b>  – względem HTML (root)</p>
+</article>
+<footer>
+            <article>
+                <p>Autor: Adrian Rauczyński 3TAB</p>
+            </article>
+        </footer>
+    <script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+</script>
+</body>
+</html>

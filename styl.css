@@ -48,3 +48,45 @@ footer {
     clear: both;
     color: white;
 }
+div {
+    background: linear-gradient(to right, black, grey, black);
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    section {
+        width: 80%;
+        margin: 20px 0;
+    }
+    footer, header {
+        background: none;
+    }
+}
+
+/* TELEFON */
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    section {
+        width: 95%;
+        height: 200px;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="jeż.png" type="image/png">
+</head>
+<body>
+    <header><h1>SCIĄGAWKA JS</h1>
+    
+        <article id="naglowek">
+        <ol>
+           <li> <a href="#zmiene">ZMIENNE</a> <br/> </li>
+           <li> <a href="#dane">TYPY DANYCH</a> <br/> </li>
+           <li> <a href="#Operatory">OPERATORY</a> <br/> </li>
+           <li> <a href="#string">STRINGI</a> <br/> </li>
+           <li> <a href="#tablice">TABLICE</a> <br/> </li>
+           <li> <a href="#funkc">FUNCKJE</a> <br/> </li>
+           <li> <a href="#obiekt">OBIEKTY</a> <br/> </li>
+           <li> <a href="#dom">DOM</a> <br/> </li>
+           <li> <a href="#nawigacja">NAWIGACJA DOM</a> <br/> </li>
+           <li> <a href="#zmianahtml">ZMIANA HTML</a> <br/> </li>
+           <li> <a href="#style">STYLE</a> <br/> </li>
+           <li> <a href="#event">EVENTY</a> <br/> </li>
+           <li> <a href="#formularz">FORMULARZE</a> <br/> </li>
+           <li> <a href="#localStorage">LOCALSTORAGE</a> <br/> </li>
+           <li> <a href="#fetch">FETCH API</a> <br/> </li>
+           <li> <a href="#await">ASYNC / AWAIT</a> <br/> </li>
+           <li> <a href="#math">MATH</a> <br/> </li>
+           <li> <a href="#timery">TIMERY</a> <br/> </li>
+           <li> <a href="#canva">CANVAS</a> <br/> </li>
+           <li> <a href="#debag">DEBUGOWANIE</a> <br/> </li>
+           <li> <a href="#warunki">WARUNKI (IF / ELSE)</a> <br/> </li>
+           <li> <a href="#petle">PĘTLE</a> <br/> </li>
+        </ol>
+        </article>
+    </header>
+    
+    
+
+<article id="zmiene">
+<h2>1. Zmienne</h2>
+
+<p><b>var</b> – stara zmienna, ma zasięg funkcji, hoisting (może powodować błędy)</p>
+<p><b>let</b> – nowoczesna zmienna, działa tylko w bloku { }</p>
+<p><b>const</b> – stała (nie można zmienić wartości)</p>
+
+
+</article>
+
+<article id="dane">
+<h2>2. Typy danych</h2>
+
+<p><b>string</b> – tekst</p>
+<p><b>number</b> – liczby</p>
+<p><b>boolean</b> – true / false</p>
+<p><b>null</b> – brak wartości (celowo)</p>
+<p><b>undefined</b> – brak wartości (automatycznie)</p>
+<p><b>object</b> – obiekt</p>
+<p><b>array</b> – tablica</p>
+
+</article>
+
+<article id="Operatory">
+<h2>3. Operatory</h2>
+
+<p><b>===</b> – porównanie wartości i typu (NAJLEPSZE)</p>
+<p><b>==</b> – porównanie tylko wartości (unikać)</p>
+<p><b>&&</b> – AND</p>
+<p><b>||</b> – OR</p>
+<p><b>!</b> – NOT</p>
+
+</article>
+
+<article id="string">
+<h2>4. Stringi</h2>
+
+<p><b>.length</b> – długość tekstu</p>
+<p><b>.toUpperCase()</b> – wielkie litery</p>
+<p><b>.toLowerCase()</b> – małe litery</p>
+<p><b>.trim()</b> – usuwa spacje</p>
+<p><b>.includes()</b> – sprawdza czy zawiera tekst</p>
+<p><b>.split()</b> – dzieli na tablicę</p>
+<p><b>.join()</b> – łączy tablicę</p>
+
+</article>
+
+<article id="tablice">
+<h2>5. Tablice</h2>
+<p><b>const tablica = [0,1,2,3,4]</b> – tablica liczy sie od 0</p>
+<p><b>.push()</b> – dodaje na koniec</p>
+<p><b>.pop()</b> – usuwa z końca</p>
+<p><b>.shift()</b> – usuwa z początku</p>
+<p><b>.unshift()</b> – dodaje na początek</p>
+
+<p><b>.map()</b> – tworzy nową tablicę</p>
+<p><b>.filter()</b> – filtruje elementy</p>
+<p><b>.find()</b> – znajduje pierwszy element</p>
+<p><b>.forEach()</b> – wykonuje dla każdego</p>
+
+</article>
+
+<article id="funkc">
+<h2>6. Funkcje</h2>
+
+<p><b>function test(){}</b> – funkcja klasyczna</p>
+<p><b>const test = () => {}</b> – funkcja strzałkowa</p>
+<p><b>return</b> – zwraca wartość</p>
+
+</article>
+
+<article id="obiekt">
+<h2>7. Obiekty</h2>
+
+<p><b>{ name:"Jan" }</b> – obiekt</p>
+<p><b>this</b> – odnosi się do obiektu</p>
+
+</article>
+
+<article id="dom">
+<h2>8. DOM</h2>
+
+<p><b>getElementById()</b> – pobiera po ID</p>
+<p><b>querySelector()</b> – pobiera pierwszy element (NAJWAŻNIEJSZE)</p>
+<p><b>querySelectorAll()</b> – pobiera wiele</p>
+
+</article>
+
+<article id="nawigacja">
+<h2>9. Nawigacja DOM</h2>
+
+<p><b>children</b> – dzieci elementu</p>
+<p><b>parentElement</b> – rodzic</p>
+<p><b>firstElementChild</b> – pierwszy element</p>
+<p><b>lastElementChild</b> – ostatni element</p>
+
+</article>
+
+<article id="zmianahtml">
+<h2>10. Zmiana HTML</h2>
+
+<p><b>textContent</b> – zmienia tekst</p>
+<p><b>innerHTML</b> – zmienia HTML</p>
+<p><b>setAttribute()</b> – ustawia atrybut</p>
+
+</article>
+
+<article id="style">
+<h2>11. Style</h2>
+
+<p><b>style.color</b> – zmiana koloru</p>
+<p><b>style.display</b> – pokazuje/ukrywa</p>
+
+<p><b>classList.add()</b> – dodaje klasę</p>
+<p><b>classList.remove()</b> – usuwa</p>
+<p><b>classList.toggle()</b> – przełącza</p>
+
+</article>
+
+<article id="event">
+<h2>12. Eventy</h2>
+
+<p><b>addEventListener()</b> – dodaje zdarzenie</p>
+<p><b>click</b> – kliknięcie</p>
+<p><b>input</b> – wpisywanie</p>
+
+<p><b>e.target</b> – element który kliknięto</p>
+<p><b>preventDefault()</b> – blokuje akcję</p>
+
+</article>
+
+<article id="formularz">
+<h2>13. Formularze</h2>
+
+<p><b>.value</b> – wartość pola</p>
+<p><b>.checked</b> – checkbox</p>
+<p><b>.selectedIndex</b> – wybrana opcja</p>
+
+</article>
+
+<article id="localStorage">
+<h2>14. LocalStorage</h2>
+
+<p><b>localStorage.setItem()</b> – zapis</p>
+<p><b>localStorage.getItem()</b> – odczyt</p>
+
+<p><b>JSON.stringify()</b> – obiekt → tekst</p>
+<p><b>JSON.parse()</b> – tekst → obiekt</p>
+
+</article>
+
+<article id="fetch">
+<h2>15. Fetch API</h2>
+
+<p><b>fetch()</b> – pobiera dane z internetu</p>
+<p><b>.then()</b> – obsługa wyniku</p>
+<p><b>.catch()</b> – obsługa błędu</p>
+
+</article>
+
+<article id="await">
+<h2>16. Async / Await</h2>
+
+<p><b>async</b> – funkcja asynchroniczna</p>
+<p><b>await</b> – czeka na wynik</p>
+
+</article>
+
+<article id="math">
+<h2>17. Math</h2>
+
+<p><b>Math.random()</b> – losowa liczba</p>
+<p><b>Math.floor()</b> – zaokrągla w dół</p>
+<p><b>Math.ceil(liczba)</b> — zaokrągla liczbę w górę do najbliższej liczby całkowitej</p>
+<p><b>Math.round()</b> – normalne zaokrąglenie</p>
+
+</article>
+
+<article id="timery">
+<h2>18. Timery</h2>
+
+<p><b>setTimeout()</b> – opóźnia wykonanie</p>
+<p><b>setInterval()</b> – powtarza</p>
+<p><b>clearInterval()</b> – zatrzymuje</p>
+
+</article>
+
+<article id="canva">
+<h2>19. Canvas (WAŻNE)</h2>
+
+<p><b>getContext("2d")</b> — pobiera kontekst rysowania 2D z elementu canvas</p>
+
+<p><b>fillRect(x, y, width, height)</b> — rysuje prostokąt (wypełniony)</p>
+
+<p><b>arc(x, y, r, start, end)</b> — rysuje okrąg/łuk</p>
+
+<p><b>fillText("tekst", x, y)</b> — rysuje tekst na canvas</p>
+
+
+
+</article>
+
+<article id="debag">
+<h2>20. Debugowanie</h2>
+
+<p><b>console.log()</b> — wypisuje dane</p>
+<p><b>console.table()</b> — tabela</p>
+<p><b>debugger</b> — zatrzymuje kod</p>
+
+</article>
+<article>
+<div class="important">
+Na egzaminie używaj: <b>let i const</b>
+</div>
+</article>
+<article id="warunki">
+<h2>21. Warunki (if / else)</h2>
+
+<p><b>if (warunek) { }</b> — wykonuje kod jeśli warunek jest prawdziwy (true)</p>
+
+<p><b>if (x > 5) { console.log("większe"); }</b> — przykład</p>
+
+<p><b>if (warunek) { } else { }</b> — jeśli warunek fałszywy wykona else</p>
+
+<p><b>if (x > 5) { }</b><br>
+<b>else if (x === 5) { }</b><br>
+<b>else { }</b> — wiele warunków</p>
+
+<p><b>switch(x)</b> — alternatywa dla wielu if</p>
+
+</article>
+
+<article id="petle">
+<h2>22. Pętle (loops)</h2>
+
+<p><b>for</b> — pętla z licznikiem</p>
+
+<pre>
+for(let i = 0; i < 5; i++){
+ console.log(i);
+}
+</pre>
+
+<p><b>while</b> — wykonuje dopóki warunek true</p>
+
+<pre>
+let i = 0;
+while(i < 5){
+ i++;
+}
+</pre>
+
+<p><b>do while</b> — wykona się przynajmniej raz</p>
+
+<pre>
+let i = 0;
+do{
+ i++;
+}while(i < 5);
+</pre>
+
+<p><b>for...of</b> — do tablic (najczęściej na egzaminie)</p>
+
+<pre>
+const tab = [1,2,3];
+for(const el of tab){
+ console.log(el);
+}
+</pre>
+
+<p><b>for...in</b> — do obiektów</p>
+
+<pre>
+<b>const obj = {a:1,b:2};
+for(const key in obj){
+ console.log(key //-klucz objektu//);
+}</b>
+</pre>
+
+<p><b>break</b> — przerywa działanie pętli lub instrukcji switch</p>
+<div>
+<p><b>forEach działa tylko na tablicach!</b>  </p>
+<p><b>for...in = obiekty </b> </p>
+<p><b>for...of = tablice (najlepsze)</b></p>
+</div>
+</article>
+
+        <footer>
+    <article>
+        <p>Autor: Adrian Rauczyński 3TAB</p>
+        </footer>
+    </article>    
+    </main>
+    <script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+</script>
+</body>
+</html>

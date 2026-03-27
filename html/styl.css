@@ -83,3 +83,12 @@ header article#naglowek ol li a {
 footer {
     text-align: center;
 }
+#form {
+    width:300px; 
+    height:120px; 
+}
+@media (max-width: 600px) {
+    .form {
+        width: 80%;
+    }
+}

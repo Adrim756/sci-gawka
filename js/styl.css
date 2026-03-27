@@ -1,0 +1,94 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+header {
+    background-color: #444444;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    line-height: 1.5;
+    font-size: 110%;
+}
+body {
+    background-color: #000000;
+    font-family: "Times New Roman", serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+
+article {
+    background-color: #444444;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    line-height: 1.5;   
+    
+}
+
+h1, h2, h3 {
+    color: #f0f0f0;
+}
+h1 {
+    font-size: 200%;
+}
+
+p, b {
+    color: #ffffff;
+}
+mark {
+    background-color: red;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #1c1c1c;
+    box-shadow: 0px 0px 10px black;
+}
+header {
+    text-align: center; /* np. h1 może być wycentrowany */
+}
+
+/* Lista w nagłówku wyrównana do lewej */
+header article#naglowek ol {
+    width: 100%;       /* cała szerokość nagłówka */
+    margin: 0px;
+    padding-left: 20px; 
+    text-align: left;  /* tekst i linki do lewej */
+    
+    
+}
+
+/* Linki w li nagłówka */
+/* Elementy listy w nagłówku */
+header article#naglowek ol li {
+    margin: 0;        /* usuwa marginesy li */
+    padding: 0;       /* usuwa padding li */
+    line-height: 0.8;   /* minimalna wysokość wiersza, ciasno pod sobą */
+}
+
+/* Linki w li */
+header article#naglowek ol li a {
+    display: block;    /* każdy link jako blok */
+    text-align: left;  /* tekst linku do lewej */
+    margin: 0;
+    padding: 0;
+}
+footer {
+    text-align: center;
+}
+#form {
+    width:300px; 
+    height:120px; 
+}
+@media (max-width: 600px) {
+    .form {
+        width: 80%;
+    }
+}
