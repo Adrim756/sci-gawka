@@ -12,16 +12,317 @@
     
         <article id="naglowek">
         <ol>
-           <li> <a href="#wtrakcie">W trakcie budowy</a> <br/> </li>
-           
+           <li> <a href="#wphpstart">phpstart</a> <br/> </li>
+           <li> <a href="#zmienne">zmienne</a> <br/> </li>
+           <li> <a href="#typy">Typy danych</a> <br/> </li>
+           <li> <a href="#echo">Echo / Print</a> <br/> </li>
+           <li> <a href="#operatory">Operatory</a> <br/> </li>
+           <li> <a href="#warunki">Warunki</a> <br/> </li>
+           <li> <a href="#petle">Pętle</a> <br/> </li>
+           <li> <a href="#tablice">Tablice</a> <br/> </li>
+           <li> <a href="#stringi">Stringi</a> <br/> </li>
+           <li> <a href="#funkcje">Funkcje</a> <br/> </li>
+           <li> <a href="#formularze">Formularze</a> <br/> </li>
+           <li> <a href="#isset">Isset</a> <br/> </li>
+           <li> <a href="#sesje">Sesje</a> <br/> </li>
+           <li> <a href="#cookies">Cookies</a> <br/> </li>
+           <li> <a href="#pliki">Pliki</a> <br/> </li>
+           <li> <a href="#include">Include</a> <br/> </li>
+           <li> <a href="#mysql">MySQL</a> <br/> </li>
+           <li> <a href="#sql">SQL</a> <br/> </li>
+           <li> <a href="#bezpieczenstwo">bezpieczenstwo</a> <br/> </li>
+           <li> <a href="#daty">Daty</a> <br/> </li>
+           <li> <a href="#ważne">Ważne</a> <br/> </li>
         </ol>
         </article>
     </header>
     
-    
+    <article id="phpstart">
+<h2>1. Start PHP</h2>
+
+<p><b>&lt;?php ?&gt;</b> — otwarcie i zamknięcie PHP</p>
+
+<pre>
+<?php
+ echo "Witaj";
+?>
+</pre>
+
+</article>
+
+<article id="zmienne">
+<h2>2. Zmienne</h2>
+
+<p><b>$x = 5;</b> — liczba</p>
+<p><b>$tekst = "hej";</b> — string</p>
+<p><b>const TEST = "PHP";</b> — stała</p>
+
+</article>
+
+<article id="typy">
+<h2>3. Typy danych</h2>
+
+<p><b>string</b> — tekst</p>
+<p><b>int</b> — liczba całkowita</p>
+<p><b>float</b> — liczba zmiennoprzecinkowa</p>
+<p><b>bool</b> — true / false</p>
+<p><b>array</b> — tablica</p>
+<p><b>object</b> — obiekt</p>
+<p><b>null</b> — brak wartości</p>
+
+</article>
+
+<article id="echo">
+<h2>4. Echo / Print</h2>
+
+<p><b>echo</b> — wypisuje dane lepiej używać tego</p>
+<p><b>print</b> — podobne do echo</p>
+
+<pre>
+echo "Cześć";
+</pre>
+
+</article>
+
+<article id="operatory">
+<h2>5. Operatory</h2>
+
+<p><b>+</b> — dodawanie</p>
+<p><b>-</b> — odejmowanie</p>
+<p><b>*</b> — mnożenie</p>
+<p><b>/</b> — dzielenie</p>
+<p><b>%</b> — modulo</p>
+
+<p><b>==</b> — porównanie wartości</p>
+<p><b>===</b> — porównanie wartości i typu</p>
+
+<p><b>&&</b> — AND</p>
+<p><b>||</b> — OR</p>
+<p><b>!</b> — NOT</p>
+
+</article>
+
+<article id="warunki">
+<h2>6. Warunki</h2>
+
+<pre>
+if($x > 5){
+ echo "większe";
+}else{
+ echo "mniejsze";
+}
+</pre>
+
+<p><b>switch</b> — wiele warunków</p>
+
+</article>
+
+<article id="petle">
+<h2>7. Pętle</h2>
+
+<p><b>for</b></p>
+
+<pre>
+for($i = 0; $i < 5; $i++){
+ echo $i;
+}
+</pre>
+
+<p><b>while</b></p>
+
+<pre>
+while($x < 5){
+ $x++;
+}
+</pre>
+
+<p><b>foreach</b> — najważniejsze dla tablic</p>
+
+<pre>
+$tab = [1,2,3];
+
+foreach($tab as $el){
+ echo $el;
+}
+</pre>
+
+</article>
+
+<article id="tablice">
+<h2>8. Tablice</h2>
+
+<pre>
+$tab = [1,2,3];
+</pre>
+
+<p><b>count()</b> — liczba elementów</p>
+<p><b>sort()</b> — sortowanie</p>
+<p><b>array_push()</b> — dodaje element</p>
+
+</article>
+
+<article id="stringi">
+<h2>9. Stringi</h2>
+
+<p><b>strlen()</b> — długość tekstu</p>
+<p><b>strtoupper()</b> — wielkie litery</p>
+<p><b>strtolower()</b> — małe litery</p>
+<p><b>trim()</b> — usuwa spacje</p>
+<p><b>explode()</b> — string → tablica</p>
+<p><b>implode()</b> — tablica → string</p>
+
+</article>
+
+<article id="funkcje">
+<h2>10. Funkcje</h2>
+
+<pre>
+function test(){
+ echo "hej";
+}
+</pre>
+
+<p><b>return</b> — zwraca wartość</p>
+
+</article>
+
+<article id="formularze">
+<h2>11. Formularze</h2>
+
+<p><b>$_GET</b> — dane z URL</p>
+<p><b>$_POST</b> — dane z formularza</p>
+
+<pre>
+$imie = $_POST["imie"];
+echo $imie;
+</pre>
+
+</article>
+
+<article id="isset">
+<h2>12. isset() i empty()</h2>
+
+<p><b>isset()</b> — sprawdza czy istnieje</p>
+<p><b>empty()</b> — sprawdza czy puste</p>
+
+<pre>
+if(isset($_POST["login"])){
+ echo "ok";
+}
+</pre>
+
+</article>
+
+<article id="sesje">
+<h2>13. Sesje</h2>
+
+<pre>
+session_start();
+
+$_SESSION["user"] = "admin";
+</pre>
+
+<p><b>session_destroy()</b> — usuwa sesję</p>
+
+</article>
+
+<article id="cookies">
+<h2>14. Cookies</h2>
+
+<pre>
+setcookie("test","123",time()+3600);
+</pre>
+
+</article>
+
+<article id="pliki">
+<h2>15. Pliki</h2>
+
+<p><b>file_get_contents()</b> — odczyt pliku</p>
+<p><b>file_put_contents()</b> — zapis pliku</p>
+
+</article>
+
+<article id="include">
+<h2>16. Include / Require</h2>
+
+<p><b>include</b> — dołącza plik</p>
+<p><b>require</b> — dołącza plik (ważniejsze)</p>
+
+<pre>
+include "menu.php";
+</pre>
+
+</article>
+
+<article id="mysql">
+<h2>17. MySQL</h2>
+
+<pre>
+$conn = mysqli_connect(
+ "localhost",
+ "root",
+ "",
+ "test"
+);
+</pre>
+
+<p><b>mysqli_query()</b> — wykonuje zapytanie</p>
+<p><b>mysqli_fetch_array() </b> — pobiera rekord jako tablicę $row['imie'] bądź $row[0]</p>
+<p><b>mysqli_fetch_assoc()</b> — pobiera rekord jako tablica asocjacyjna $row['imie']</p>
+<p><b>mysqli_fetch_row()</b> — pobiera rekord jako zwykła tablica $row[0]</p>
+<p><b>mysqli_num_rows()</b> — liczba rekordów</p>
+<p><b>mysqli_close()</b> — zamyka połączenie</p>
+
+
+
+
+</article>
+
+<article id="sql">
+<h2>18. SQL</h2>
+
+<p><b>SELECT</b> — pobiera dane</p>
+<p><b>INSERT INTO</b> — dodaje dane</p>
+<p><b>UPDATE</b> — aktualizuje</p>
+<p><b>DELETE</b> — usuwa dane</p>
+
+</article>
+
+<article id="bezpieczenstwo">
+<h2>19. Bezpieczeństwo</h2>
+
+<p><b>htmlspecialchars()</b> — zabezpiecza HTML</p>
+
+<p><b>password_hash()</b> — szyfruje hasło</p>
+
+<p><b>password_verify()</b> — sprawdza hasło</p>
+
+</article>
+
+<article id="daty">
+<h2>20. Daty</h2>
+
+<p><b>date()</b> — aktualna data</p>
+
+<pre>
+echo date("Y-m-d");
+</pre>
+
+</article>
+
+<article id="ważne">
+<h2>21. Ważne na INF.03</h2>
+
+<p><b>$_POST</b> — bardzo ważne</p>
+<p><b>foreach</b> — bardzo częste</p>
+<p><b>mysqli</b> — baza danych</p>
+<p><b>session_start()</b> — logowanie</p>
+<p><b>isset()</b> — sprawdzanie formularzy</p>
+
+</article>
     <main>
-        <section style="text-align: center;">
-        <h1> w trakcie budowy</h1>
+        
         <footer>
             </section>
             <article style="text-align: center;">
